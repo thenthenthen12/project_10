@@ -4290,7 +4290,6 @@ section {
     display: flex;
     align-items: center;
     height: 60px;
-    line-height: 60px;
     font-size: 25px;
     padding-left: 0 1.5rem;
 }
