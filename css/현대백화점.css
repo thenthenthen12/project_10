@@ -6790,13 +6790,13 @@ footer>.right>.bot {
 }
 @media screen and (max-width:360px) {
     .cont_03>.arti>.item:nth-child(3)>.info.on{
-        height: 70vw;
+        height: 60vw;
     }
     .cont_03>.arti>.item:nth-child(4)>.info.on{
         height: 60vw;
     }
     .cont_03>.arti>.item:nth-child(5)>.info.on{
-        height: 70vw;
+        height: 60vw;
     }
     header .depth_02.on h3.on>p{
         padding-right: 4rem;
