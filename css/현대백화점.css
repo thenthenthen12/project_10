@@ -5726,6 +5726,12 @@ footer>.right>.bot {
 
 
 @media screen and (max-width:1024px) {
+    .main_visual{
+        height: 50vh;
+    }
+    .main_visual video{
+        height: calc(50vh + 60px);
+    }
     html, body{
         font-size: 50%;
     }
@@ -5942,8 +5948,17 @@ footer>.right>.bot {
     }
     .cont_03>.arti>.item>.info.on{
         width: 100%;
-        height: 60vh;
+        height: 45vh;
         border: 5px solid #154733;
+    }
+    .cont_03>.arti>.item:nth-child(3)>.info.on{
+        height: 55vw;
+    }
+    .cont_03>.arti>.item:nth-child(4)>.info.on{
+        height: 55vw;
+    }
+    .cont_03>.arti>.item:nth-child(5)>.info.on{
+        height: 55vw;
     }
     .cont_03>.arti{
         height: auto;
@@ -6180,6 +6195,7 @@ footer>.right>.bot {
 }
 
 @media screen and (max-width:767px) {
+
     header .depth_02.on h3.on>p{
         width: 15px;
     }
@@ -6437,6 +6453,24 @@ footer>.right>.bot {
 
 
 @media screen and (max-width:550px) {
+    .cont_03>.arti>.item:nth-child(3)>.info.on .text div>p{
+        font-size: 16px;
+    }
+    .cont_03>.arti>.item:nth-child(4)>.info.on .text div>p{
+        font-size: 16px;
+    }
+    .cont_03>.arti>.item:nth-child(5)>.info.on .text div>p{
+        font-size: 16px;
+    }
+    /* .cont_03>.arti>.item:nth-child(3)>.info.on{
+        height: 70vw;
+    }
+    .cont_03>.arti>.item:nth-child(4)>.info.on{
+        height: 70vw;
+    }
+    .cont_03>.arti>.item:nth-child(5)>.info.on{
+        height: 70vw;
+    } */
     .cont_02 .inner{
         width: 100%;
     }
@@ -6591,6 +6625,19 @@ footer>.right>.bot {
     }
 }
 @media screen and (max-width:480px) {
+    .cont_03>.arti>.item:nth-child(6)>.info.on{
+        height: 80vw;
+    }
+    .cont_03>.arti>.item:nth-child(3)>.info.on{
+        height: 60vw;
+    }
+    .cont_03>.arti>.item:nth-child(4)>.info.on{
+        height: 60vw;
+    }
+    .cont_03>.arti>.item:nth-child(5)>.info.on{
+        height: 60vw;
+    }
+
     .cont_02 .inner .arti>.item>.title h1{
         font-size: 20px;
     }
@@ -6741,10 +6788,17 @@ footer>.right>.bot {
         width: 100%;
         margin-bottom: 1rem;
     }
-
-
 }
 @media screen and (max-width:360px) {
+    .cont_03>.arti>.item:nth-child(3)>.info.on{
+        height: 70vw;
+    }
+    .cont_03>.arti>.item:nth-child(4)>.info.on{
+        height: 60vw;
+    }
+    .cont_03>.arti>.item:nth-child(5)>.info.on{
+        height: 70vw;
+    }
     header .depth_02.on h3.on>p{
         padding-right: 4rem;
     }
