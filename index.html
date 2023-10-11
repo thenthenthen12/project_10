@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,20 @@
     <link rel="stylesheet" href="css/현대백화점.css">
     <script src="lib/jquery-3.7.0.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
 
             //header 스크립트 시작
-
-
-
-            $('header .inner .menu_btn').click(function(){
+            $('header .inner .menu_btn').click(function () {
                 $(this).toggleClass('on')
                 $('header .depth_02').toggleClass('on')
                 $('body').toggleClass('on')
             })
-            $('header .depth_02 h3 ul li:nth-child(1)').click(function(){
+            $('header .depth_02 h3 ul li:nth-child(1)').click(function () {
                 $('header .depth_02 h3 ul li:nth-child(n+2)').stop().slideUp()
                 $(this).nextAll().stop().slideToggle()
             })
 
-            $('header .depth_02 h3').click(function(){
+            $('header .depth_02 h3').click(function () {
                 $('header .depth_02 h3').removeClass('on')
                 $(this).addClass('on')
 
@@ -33,14 +31,14 @@
                 $('header .depth_02 h3 .active').removeClass('on')
                 $(this).children().addClass('on')
             })
-            $('header .depth_02 h3').mouseleave(function(){
+            $('header .depth_02 h3').mouseleave(function () {
                 $('header .depth_02 h3').removeClass('on')
                 $('header .depth_02 h3').removeClass('on1')
                 $('header .depth_02 h3 .active').removeClass('on')
             })
+
             //cont_01 스크립트
-            
-            $('.cont_01 .inner .arti .left .list li').click(function(){
+            $('.cont_01 .inner .arti .left .list li').click(function () {
                 $('.cont_01 .inner .arti .left .list li').removeClass('on')
                 $(this).addClass('on')
                 $('.cont_01 .inner .arti .right .title_list .title').removeClass('on')
@@ -48,7 +46,7 @@
                 $('.cont_01 .inner .arti .right .item_list .item').removeClass('on')
                 $('.cont_01 .inner .arti .right .item_list .item').eq($(this).index()).addClass('on')
             })
-            $('.mobile_550px .inner .arti .left .list li').click(function(){
+            $('.mobile_550px .inner .arti .left .list li').click(function () {
                 $('.mobile_550px .inner .arti .left .list li').removeClass('on')
                 $(this).addClass('on')
                 $('.mobile_550px .inner .arti .right .title_list .title').removeClass('on')
@@ -57,15 +55,14 @@
                 $('.mobile_550px .inner .arti .right .item_list .item').eq($(this).index()).addClass('on')
             })
 
-
             //cont_02 스크립트
-            $('.cont_02').mouseleave(function(){
+            $('.cont_02').mouseleave(function () {
                 $('.cont_02 .inner .arti .item').removeClass('on1')
                 $('.cont_02 .inner .arti .item').removeClass('on')
                 $('.cont_02 .inner .arti .item').removeClass('on2')
             })
 
-            $('.cont_02 .inner .arti .item:nth-child(1)').click(function(){
+            $('.cont_02 .inner .arti .item:nth-child(1)').click(function () {
                 $('.cont_02 .inner .arti .item').removeClass('on1')
                 $(this).addClass('on1')
                 $('.cont_02 .inner .arti .item').removeClass('on')
@@ -73,7 +70,7 @@
                 $('.cont_02 .inner .arti .item').removeClass('on2')
                 $(this).nextAll().addClass('on2')
             })
-            $('.cont_02 .inner .arti .item:nth-child(2)').click(function(){
+            $('.cont_02 .inner .arti .item:nth-child(2)').click(function () {
                 $('.cont_02 .inner .arti .item').removeClass('on1')
                 $(this).addClass('on1')
                 $('.cont_02 .inner .arti .item').removeClass('on')
@@ -81,7 +78,7 @@
                 $('.cont_02 .inner .arti .item').removeClass('on2')
                 $(this).nextAll().addClass('on2')
             })
-            $('.cont_02 .inner .arti .item:nth-child(3)').click(function(){
+            $('.cont_02 .inner .arti .item:nth-child(3)').click(function () {
                 $('.cont_02 .inner .arti .item').removeClass('on1')
                 $(this).addClass('on1')
                 $('.cont_02 .inner .arti .item').removeClass('on')
@@ -89,7 +86,7 @@
                 $('.cont_02 .inner .arti .item').removeClass('on2')
                 $(this).nextAll().addClass('on2')
             })
-            $('.cont_02 .inner .arti .item:nth-child(4)').click(function(){
+            $('.cont_02 .inner .arti .item:nth-child(4)').click(function () {
                 $('.cont_02 .inner .arti .item').removeClass('on1')
                 $(this).addClass('on1')
                 $('.cont_02 .inner .arti .item').removeClass('on')
@@ -99,15 +96,13 @@
             })
 
             //cont_03 스크립트
-
-            $('.cont_03 .arti .item .title').click(function(){
+            $('.cont_03 .arti .item .title').click(function () {
                 $('.cont_03 .arti .item .info').removeClass('on')
                 $(this).next().addClass('on')
             })
 
             //cont_04 스크립트
-
-            $('.cont_04 .inner .up .list li').click(function(){
+            $('.cont_04 .inner .up .list li').click(function () {
                 $('.cont_04 .inner .up .list li').removeClass('on')
                 $(this).addClass('on')
 
@@ -115,43 +110,40 @@
                 $('.cont_04 .inner .down .arti').eq($(this).index()).addClass('on')
             })
 
-
-            $('.cont_04 .inner .down').mouseleave(function(){
+            $('.cont_04 .inner .down').mouseleave(function () {
                 $('.cont_04 .inner .down .arti.on >div').removeClass('on')
                 $('.cont_04 .inner .down .arti.on >div').removeClass('on1')
             })
 
-
-            $('.cont_04 .inner .down .arti .top').click(function(){
+            $('.cont_04 .inner .down .arti .top').click(function () {
                 $(this).addClass('on')
                 $(this).siblings().addClass('on1')
             })
-            $('.cont_04 .inner .down .arti .mid').click(function(){
+            $('.cont_04 .inner .down .arti .mid').click(function () {
                 $(this).addClass('on')
                 $(this).siblings().addClass('on1')
             })
-            $('.cont_04 .inner .down .arti .bot').click(function(){
+            $('.cont_04 .inner .down .arti .bot').click(function () {
                 $(this).addClass('on')
                 $(this).siblings().addClass('on1')
             })
-
 
             //cont_05스크립트
-            $('.cont_05 .inner .down .left ul li').click(function(){
+            $('.cont_05 .inner .down .left ul li').click(function () {
                 let move = $(this).position().top;
 
                 $('.cont_05 .bar').stop().animate({
-                    'top' : move
+                    'top': move
                 })
                 $('.cont_05 .inner .down .left ul li').removeClass('on')
                 $(this).addClass('on')
                 $('.cont_05 .inner .down .right img').removeClass('on')
                 $('.cont_05 .inner .down .right img').eq($(this).index()).addClass('on')
             })
-
         })
     </script>
 </head>
+
 <body>
     <div id="wrap">
         <header>
@@ -374,7 +366,7 @@
             <div class="inner">
                 <h1>
                     <a href="#">
-                        <img src="img/현대백화점 로고 1.png" alt="">
+                        <img src="img/현대백화점 로고 1.png" alt="메인로고">
                     </a>
                 </h1>
                 <div class="menu_btn">
@@ -398,55 +390,55 @@
                     <div class="arti">
                         <div class="left">
                             <ul class="list">
-                                <li class="on"><img src="img/cont_01_list1.jpg" alt=""></li>
-                                <li><img src="img/cont_01_list2.png" alt=""></li>
-                                <li><img src="img/cont_01_list3.png" alt=""></li>
-                                <li><img src="img/cont_01_list4.png" alt=""></li>
-                                <li><img src="img/cont_01_list5.png" alt=""></li>
+                                <li class="on"><img src="img/cont_01_list1.jpg" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list2.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list3.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list4.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list5.png" alt="탭이미지"></li>
                             </ul><!-- .list end -->
                         </div><!-- .left end -->
                         <div class="right">
                             <div class="title_list">
-                                <div class="title on" >
+                                <div class="title on">
                                     <h2>책 읽기와 글쓰기를 놀이처럼<br>
-                                    즐길 수 있는 새로운 경험</h2>
+                                        즐길 수 있는 새로운 경험</h2>
                                     <p>4.25(화) ~ 10.15(일)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>가을시즌 수강신청<br> <span>CULTURE CENTER</span></h2>
                                     <p>07.25(화) ~ 07.26(수)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>[AMAZING STORY]<br>
                                         현대의 정원 :<br>
                                         키네틱&미디어 아트Ⅰ</h2>
                                     <p>08.25(금) ~ 09.14(목)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>[Travel to America]<br>
                                         슈퍼히어로 컬렉션 전시</h2>
                                     <p>09.01(금) ~ 09.17(일)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>생동감 넘치는 예술 축제,<br> '더 현대 아트 스테이지'</h2>
                                     <p>8.25(금) ~ 9.10(일)</p>
                                 </div><!-- .title end -->
                             </div><!-- .title_list end -->
                             <div class="item_list">
                                 <div class="item on">
-                                    <img src="img/cont_01 item1.jpg" alt="">
+                                    <img src="img/cont_01 item1.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item2.jpg" alt="">
+                                    <img src="img/cont_01 item2.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item3.png" alt="">
+                                    <img src="img/cont_01 item3.png" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item4.jpg" alt="">
+                                    <img src="img/cont_01 item4.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item5.png" alt="">
+                                    <img src="img/cont_01 item5.png" alt="대표이미지">
                                 </div><!-- .item end -->
                             </div><!-- .item_list end -->
                         </div><!-- .right end -->
@@ -461,55 +453,55 @@
                     <div class="arti">
                         <div class="left">
                             <ul class="list">
-                                <li class="on"><img src="img/cont_01_list1.jpg" alt=""></li>
-                                <li><img src="img/cont_01_list2.png" alt=""></li>
-                                <li><img src="img/cont_01_list3.png" alt=""></li>
-                                <li><img src="img/cont_01_list4.png" alt=""></li>
-                                <li><img src="img/cont_01_list5.png" alt=""></li>
+                                <li class="on"><img src="img/cont_01_list1.jpg" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list2.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list3.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list4.png" alt="탭이미지"></li>
+                                <li><img src="img/cont_01_list5.png" alt="탭이미지"></li>
                             </ul><!-- .list end -->
                         </div><!-- .left end -->
                         <div class="right">
                             <div class="title_list">
-                                <div class="title on" >
+                                <div class="title on">
                                     <h2>책 읽기와 글쓰기를 놀이처럼<br>
-                                    즐길 수 있는 새로운 경험</h2>
+                                        즐길 수 있는 새로운 경험</h2>
                                     <p>4.25(화) ~ 10.15(일)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>가을시즌 수강신청<br> <span>CULTURE CENTER</span></h2>
                                     <p>07.25(화) ~ 07.26(수)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>[AMAZING STORY]<br>
                                         현대의 정원 :<br>
                                         키네틱&미디어 아트Ⅰ</h2>
                                     <p>08.25(금) ~ 09.14(목)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>[Travel to America]<br>
                                         슈퍼히어로 컬렉션 전시</h2>
                                     <p>09.01(금) ~ 09.17(일)</p>
                                 </div><!-- .title end -->
-                                <div class="title" >
+                                <div class="title">
                                     <h2>생동감 넘치는 예술 축제,<br> '더 현대 아트 스테이지'</h2>
                                     <p>8.25(금) ~ 9.10(일)</p>
                                 </div><!-- .title end -->
                             </div><!-- .title_list end -->
                             <div class="item_list">
                                 <div class="item on">
-                                    <img src="img/cont_01 item1.jpg" alt="">
+                                    <img src="img/cont_01 item1.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item2.jpg" alt="">
+                                    <img src="img/cont_01 item2.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item3.png" alt="">
+                                    <img src="img/cont_01 item3.png" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item4.jpg" alt="">
+                                    <img src="img/cont_01 item4.jpg" alt="대표이미지">
                                 </div><!-- .item end -->
                                 <div class="item">
-                                    <img src="img/cont_01 item5.png" alt="">
+                                    <img src="img/cont_01 item5.png" alt="대표이미지">
                                 </div><!-- .item end -->
                             </div><!-- .item_list end -->
                         </div><!-- .right end -->
@@ -537,14 +529,14 @@
                                     <div>
                                         <p>현대백화점</p>
                                         <span>신촌점</span>
-                                        <img src="img/cont_02 x.png" alt="">
+                                        <img src="img/cont_02 x.png" alt="콜라보">
                                         <p>서울창조경제혁신센터</p>
                                     </div>
                                 </div><!-- .top end -->
                                 <div class="mid">
                                     <p>
                                         <span>
-                                            새로운 디지털 기술과 서비스를 체험하는 공간 
+                                            새로운 디지털 기술과 서비스를 체험하는 공간
                                         </span>
                                     </p>
                                     <h1>OPEN</h1>
@@ -557,7 +549,7 @@
                                     </h1>
                                     <p>다양한 디지털 제품과 서비스를 보유한<br>
                                         우수한 스타트업 제품들을 만나보세요
-                                        </p>
+                                    </p>
                                     <div>
                                         <span>2023.8.25(금) -</span>
                                         <p>현대백화점 신촌점 본관</p>
@@ -575,9 +567,9 @@
                                     <a href="#">바로가기</a>
                                 </div>
                                 <div>
-                                    <img src="img/cont_02item2-1.png" alt="">
-                                    <img src="img/cont_02item2-2.png" alt="">
-                                    <img src="img/cont_02item2-3.png" alt="">
+                                    <img src="img/cont_02item2-1.png" alt="홍보">
+                                    <img src="img/cont_02item2-2.png" alt="홍보">
+                                    <img src="img/cont_02item2-3.png" alt="홍보">
                                 </div>
                             </div>
                         </div><!-- .item end -->
@@ -594,7 +586,7 @@
                                 </div><!-- .text end -->
                                 <div class="item">
                                     <a href="#">
-                                        <img src="img/item3-1.png" alt="">
+                                        <img src="img/item3-1.png" alt="상품">
                                         <div class="price">
                                             <p>WASHED CROP<br>BOMBER</p>
                                             <span>348,000원</span>
@@ -602,7 +594,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-2.png" alt="">
+                                        <img src="img/item3-2.png" alt="상품">
                                         <div class="price">
                                             <p>FIELD BOMBER<br>JACKET</p>
                                             <span>337,000원</span>
@@ -610,7 +602,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-3.png" alt="">
+                                        <img src="img/item3-3.png" alt="상품">
                                         <div class="price">
                                             <p>HIDEOUT<br>LAYERED SLEEVE</p>
                                             <span>135,000원</span>
@@ -618,7 +610,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-4.png" alt="">
+                                        <img src="img/item3-4.png" alt="상품">
                                         <div class="price">
                                             <p>GARDENER<br>PANTS</p>
                                             <span>215,000원</span>
@@ -630,7 +622,7 @@
                         </div><!-- .item end -->
                         <div class="item">
                             <div class="title">
-                                <h1>POLESTAR  2 ON STAR</h1>
+                                <h1>POLESTAR 2 ON STAR</h1>
                                 <span>목동점</span>
                             </div><!-- .title end -->
                             <div class="info">
@@ -668,9 +660,11 @@
                                     <p>​▪ 혜택</p>
                                     <div>
                                         <p><span>1.</span> <span>2 on tour @판교 방문 시, Polestar 2 모바일 월페이퍼 제공</span></p>
-                                        <p><span>2.</span> <span>시승 완료 시, Perlen(펠른) 커피 'Polestar Fika 2인 세트 바우처 제공<br>(현대백화점 판교점 6층)</span></p>
+                                        <p><span>2.</span> <span>시승 완료 시, Perlen(펠른) 커피 'Polestar Fika 2인 세트 바우처
+                                                제공<br>(현대백화점 판교점 6층)</span></p>
                                         <p><span>3.</span> <span>계약 및 출고 완료 시, 현대백화점 10만원 권<br>모바일 상품권 제공</span></p>
-                                        <p><span>4.</span> <span>그 외, ​다양한 이벤트 참여 고객께 Polestar additionals 제공<br>(선착순 및 추첨)</span></p>
+                                        <p><span>4.</span> <span>그 외, ​다양한 이벤트 참여 고객께 Polestar additionals 제공<br>(선착순 및
+                                                추첨)</span></p>
                                     </div>
                                 </div>
                             </div><!-- .info end -->
@@ -699,14 +693,14 @@
                                     <div>
                                         <p>현대백화점</p>
                                         <span>신촌점</span>
-                                        <img src="img/cont_02 x.png" alt="">
+                                        <img src="img/cont_02 x.png" alt="콜라보">
                                         <p>서울창조경제혁신센터</p>
                                     </div>
                                 </div><!-- .top end -->
                                 <div class="mid">
                                     <p>
                                         <span>
-                                            새로운 디지털 기술과 서비스를 체험하는 공간 
+                                            새로운 디지털 기술과 서비스를 체험하는 공간
                                         </span>
                                     </p>
                                     <h1>OPEN</h1>
@@ -719,7 +713,7 @@
                                     </h1>
                                     <p>다양한 디지털 제품과 서비스를 보유한<br>
                                         우수한 스타트업 제품들을 만나보세요
-                                        </p>
+                                    </p>
                                     <div>
                                         <span>2023.8.25(금) -</span>
                                         <p>현대백화점 신촌점 본관</p>
@@ -737,9 +731,9 @@
                                     <a href="#">바로가기</a>
                                 </div>
                                 <div>
-                                    <img src="img/cont_02item2-1.png" alt="">
-                                    <img src="img/cont_02item2-2.png" alt="">
-                                    <img src="img/cont_02item2-3.png" alt="">
+                                    <img src="img/cont_02item2-1.png" alt="홍보">
+                                    <img src="img/cont_02item2-2.png" alt="홍보">
+                                    <img src="img/cont_02item2-3.png" alt="홍보">
                                 </div>
                             </div>
                         </div><!-- .item end -->
@@ -756,7 +750,7 @@
                                 </div><!-- .text end -->
                                 <div class="item">
                                     <a href="#">
-                                        <img src="img/item3-1.png" alt="">
+                                        <img src="img/item3-1.png" alt="상품">
                                         <div class="price">
                                             <p>WASHED CROP<br>BOMBER</p>
                                             <span>348,000원</span>
@@ -764,7 +758,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-2.png" alt="">
+                                        <img src="img/item3-2.png" alt="상품">
                                         <div class="price">
                                             <p>FIELD BOMBER<br>JACKET</p>
                                             <span>337,000원</span>
@@ -772,7 +766,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-3.png" alt="">
+                                        <img src="img/item3-3.png" alt="상품">
                                         <div class="price">
                                             <p>HIDEOUT<br>LAYERED SLEEVE</p>
                                             <span>135,000원</span>
@@ -780,7 +774,7 @@
                                         </div>
                                     </a>
                                     <a href="#">
-                                        <img src="img/item3-4.png" alt="">
+                                        <img src="img/item3-4.png" alt="상품">
                                         <div class="price">
                                             <p>GARDENER<br>PANTS</p>
                                             <span>215,000원</span>
@@ -792,7 +786,7 @@
                         </div><!-- .item end -->
                         <div class="item">
                             <div class="title">
-                                <h1>POLESTAR  2 ON STAR</h1>
+                                <h1>POLESTAR 2 ON STAR</h1>
                                 <span>목동점</span>
                             </div><!-- .title end -->
                             <div class="info">
@@ -842,23 +836,23 @@
             </section><!-- .cont_02 end -->
             <section class="cont_03 pc">
                 <div class="title">
-                    <img src="img/cont_03 메인 타이틀1.png" alt="">
+                    <img src="img/cont_03 메인 타이틀1.png" alt="제목">
                 </div><!-- .title end -->
                 <div class="arti">
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀1.png" alt="">
+                            <img src="img/cont_03 타이틀1.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div class="up">
                                 <div class="left">
-                                    <img src="img/cont_03item1큰이미지.png" alt="">
+                                    <img src="img/cont_03item1큰이미지.png" alt="큰이미지">
                                 </div><!-- .left end -->
                                 <div class="right">
                                     <div class="up">
                                         <p>달콤한 티타임을 선물해요</p>
                                         <div>
-                                            <img src="img/cont_03item1보따리.png" alt="">
+                                            <img src="img/cont_03item1보따리.png" alt="보따리">
                                         </div>
                                     </div><!-- .up end -->
                                     <div class="down">
@@ -871,12 +865,13 @@
                                         </div>
                                         <div class="arti">
                                             <div class="left">
-                                                <img src="img/cont_03item1쿠키1.png" alt="">
+                                                <img src="img/cont_03item1쿠키1.png" alt="쿠키">
 
                                             </div><!-- .left end -->
                                             <div class="right">
                                                 <p>소중한 사람들에게 나눌 무언가를 고민<br>중이라면 아쉬웠던 1%를 채워줄 디저트는<br>어때요?</p>
-                                                <p>어른부터 아이까지 모두에게 달콤한 시간을<br>선사한다면 틀림없이 좋은 선물이 될거에요.<br>가볍지만 부담스럽지 않게, 여러분의 센스가<br>돋보일 수 있도록 도와드릴게요.</p>
+                                                <p>어른부터 아이까지 모두에게 달콤한 시간을<br>선사한다면 틀림없이 좋은 선물이 될거에요.<br>가볍지만 부담스럽지 않게,
+                                                    여러분의 센스가<br>돋보일 수 있도록 도와드릴게요.</p>
                                             </div><!-- .right end -->
                                         </div><!-- .arti end -->
                                     </div><!-- .down end -->
@@ -895,7 +890,8 @@
                                             <span># 가벼운 선물</span>
                                         </div><!-- .left end -->
                                         <div class="right">
-                                            <p>지난 설명절 많이 언급된 N극화를 아시나요?<br>소비양극화에 가성비를 앞세운 밀키트 세트부터,<br>특별한 명절을 위한 호텔패키지 까지!</p>
+                                            <p>지난 설명절 많이 언급된 N극화를 아시나요?<br>소비양극화에 가성비를 앞세운 밀키트 세트부터,<br>특별한 명절을 위한 호텔패키지
+                                                까지!</p>
                                             <p>SNS에 #명절선물을 검색하면 요즘은 ‘할매니얼’<br>트렌드에 맞게 개성주악, 약과와 같은 전통 디저트가<br>특히 인기!</p>
                                             <p>코로나 19의 장기화로 비대면 선물이 크게 증가했어요.</p>
                                         </div><!-- .right end -->
@@ -915,21 +911,21 @@
                                                 <span>구움과자<br> 디저트카페</span>
                                                 <p>콘디토리<br> 오븐</p>
                                             </div>
-                                            <img src="img/cont_03item1상품1.png" alt="">
+                                            <img src="img/cont_03item1상품1.png" alt="상품">
                                         </a><!-- .item end -->
                                         <a href="#" class="item">
                                             <div>
                                                 <span>프리미엄 수제<br> 양갱 전문점</span>
                                                 <p>금옥당</p>
                                             </div>
-                                            <img src="img/cont_03item1상품2.png" alt="">
+                                            <img src="img/cont_03item1상품2.png" alt="상품">
                                         </a><!-- .item end -->
                                         <a href="#" class="item">
                                             <div>
                                                 <span>전통 디저트<br> 개성주악</span>
                                                 <p>연리희재</p>
                                             </div>
-                                            <img src="img/cont_03item1상품3.png" alt="">
+                                            <img src="img/cont_03item1상품3.png" alt="상품">
                                         </a><!-- .item end -->
                                     </div><!-- .arti end -->
                                 </div><!-- .right end -->
@@ -938,11 +934,11 @@
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀2.png" alt="">
+                            <img src="img/cont_03 타이틀2.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div class="bg">
-                                <img src="img/cont_03item2배경.png" alt="">
+                                <img src="img/cont_03item2배경.png" alt="배경이미지">
                             </div><!-- .bg end -->
                             <div class="title">
                                 <div>
@@ -952,7 +948,7 @@
                             </div><!-- .title end -->
                             <div class="list">
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-1.png" alt="">
+                                    <img src="img/cont_03item2상품1-1.png" alt="상품">
                                     <div class="text">
                                         <p>아르켓</p>
                                         <span>오버사이즈 울 블렌드 트윌 블레이저</span>
@@ -960,7 +956,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-2.png" alt="">
+                                    <img src="img/cont_03item2상품1-2.png" alt="상품">
                                     <div class="text">
                                         <p>미우미우</p>
                                         <span>코튼 터틀넥 저지</span>
@@ -968,7 +964,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-3.png" alt="">
+                                    <img src="img/cont_03item2상품1-3.png" alt="상품">
                                     <div class="text">
                                         <p>버버리</p>
                                         <span>체크 울 미니 킬트</span>
@@ -976,7 +972,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-4.png" alt="">
+                                    <img src="img/cont_03item2상품1-4.png" alt="상품">
                                     <div class="text">
                                         <p>토즈</p>
                                         <span>힐 로퍼</span>
@@ -984,7 +980,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-5.png" alt="">
+                                    <img src="img/cont_03item2상품1-5.png" alt="상품">
                                     <div class="text">
                                         <p>샤넬</p>
                                         <span>클래식 플랩 백</span>
@@ -992,7 +988,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-6.png" alt="">
+                                    <img src="img/cont_03item2상품1-6.png" alt="상품">
                                     <div class="text">
                                         <p>프라다</p>
                                         <span>리 나일론 헤드밴드</span>
@@ -1000,7 +996,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-1.png" alt="">
+                                    <img src="img/cont_03item2상품1-1.png" alt="상품">
                                     <div class="text">
                                         <p>아르켓</p>
                                         <span>오버사이즈 울 블렌드 트윌 블레이저</span>
@@ -1008,7 +1004,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-2.png" alt="">
+                                    <img src="img/cont_03item2상품1-2.png" alt="상품">
                                     <div class="text">
                                         <p>미우미우</p>
                                         <span>코튼 터틀넥 저지</span>
@@ -1018,7 +1014,7 @@
                             </div>
                             <div class="list">
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-1.png" alt="">
+                                    <img src="img/cont_03item2상품2-1.png" alt="상품">
                                     <div class="text">
                                         <p>믹스마라</p>
                                         <span>렌네스 실크 블라우스</span>
@@ -1026,7 +1022,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-2.png" alt="">
+                                    <img src="img/cont_03item2상품2-2.png" alt="상품">
                                     <div class="text">
                                         <p>로로</p>
                                         <span>피아나 드레스덴 팬츠</span>
@@ -1034,7 +1030,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-3.png" alt="">
+                                    <img src="img/cont_03item2상품2-3.png" alt="상품">
                                     <div class="text">
                                         <p>로저</p>
                                         <span>비비에 트럼펫 메탈 버클 발레리나 플렛</span>
@@ -1042,7 +1038,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-4.png" alt="">
+                                    <img src="img/cont_03item2상품2-4.png" alt="상품">
                                     <div class="text">
                                         <p>셀린느</p>
                                         <span>퀴르 트리옹프 스몰 드로우스트링 카바스</span>
@@ -1050,7 +1046,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-5.png" alt="">
+                                    <img src="img/cont_03item2상품2-5.png" alt="상품">
                                     <div class="text">
                                         <p>생로랑</p>
                                         <span>선글라스 SL M127/F</span>
@@ -1058,7 +1054,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-1.png" alt="">
+                                    <img src="img/cont_03item2상품2-1.png" alt="상품">
                                     <div class="text">
                                         <p>믹스마라</p>
                                         <span>렌네스 실크 블라우스</span>
@@ -1066,7 +1062,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-2.png" alt="">
+                                    <img src="img/cont_03item2상품2-2.png" alt="상품">
                                     <div class="text">
                                         <p>로로</p>
                                         <span>피아나 드레스덴 팬츠</span>
@@ -1074,7 +1070,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-3.png" alt="">
+                                    <img src="img/cont_03item2상품2-3.png" alt="상품">
                                     <div class="text">
                                         <p>로저</p>
                                         <span>비비에 트럼펫 메탈 버클 발레리나 플렛</span>
@@ -1086,63 +1082,84 @@
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀3.png" alt="">
+                            <img src="img/cont_03 타이틀3.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-f9ihQOlM3o?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/-f9ihQOlM3o?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
                                     <p>지금 현대 | 피아제 <span>PIAGET</span></p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>조르주 피아제(Georges Piaget)가 1874년 스위스 주라 지역의 라 코토페에 첫발을 내디딘 뒤, 피아제는 고유의 스타일과 탁월한 보석 세공, 워치메이킹 기술력을 바탕으로 하이엔드 워치 주얼리 브랜드의 최정상 자리를 지키고 있다.<br><br>"언제나 완벽, 그 이상을 추구하라"는 창립자의 모토가 세대를 거쳐 전해져 온 피아제의 탁월한 작품을 무역센터점 부티크에서 소개한다.<br><br><br>@Piaget</p>
+                                <p>조르주 피아제(Georges Piaget)가 1874년 스위스 주라 지역의 라 코토페에 첫발을 내디딘 뒤, 피아제는 고유의 스타일과 탁월한 보석 세공,
+                                    워치메이킹 기술력을 바탕으로 하이엔드 워치 주얼리 브랜드의 최정상 자리를 지키고 있다.<br><br>"언제나 완벽, 그 이상을 추구하라"는 창립자의
+                                    모토가 세대를 거쳐 전해져 온 피아제의 탁월한 작품을 무역센터점 부티크에서 소개한다.<br><br><br>@Piaget</p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀4.png" alt="">
+                            <img src="img/cont_03 타이틀4.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/v41SIfIbPzU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/v41SIfIbPzU?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
                                     <p>지금 현대 | 구찌 <span>GUCCI</span></p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>A Step into the Gucci World<br><br><br>현대백화점 판교점에 오픈한 구찌 남성 부티크는 이탈리아 피렌체에 위치한 헤드쿼터의 분위기가 그대로 담겼다. 구찌의 시그니처 모티브인 핸드 페인티드 우드 플로어 장식, 앤티크한 오브제 등 하우스를 상징하는 요소로 가득하다.<br><br>구찌는 최근 유구한 역사만큼 오랜 시간 함께해온 시그니처 로고를 점보 GG로 개편해 선보이고 있다. 설립자인 구찌오 구찌(Guccio Gucci)의 이니셜이 마주보는 이 로고는 구찌를 상징하는 아이콘. 이번 시즌 점보 GG 모티브의 가방과 캐리어, 슈즈까지 모델 최현준과 함께 판교점 부티크에서 살펴본다.<br><br><br>@gucci </p>
+                                <p>A Step into the Gucci World<br><br><br>현대백화점 판교점에 오픈한 구찌 남성 부티크는 이탈리아 피렌체에 위치한 헤드쿼터의
+                                    분위기가 그대로 담겼다. 구찌의 시그니처 모티브인 핸드 페인티드 우드 플로어 장식, 앤티크한 오브제 등 하우스를 상징하는 요소로
+                                    가득하다.<br><br>구찌는 최근 유구한 역사만큼 오랜 시간 함께해온 시그니처 로고를 점보 GG로 개편해 선보이고 있다. 설립자인 구찌오
+                                    구찌(Guccio Gucci)의 이니셜이 마주보는 이 로고는 구찌를 상징하는 아이콘. 이번 시즌 점보 GG 모티브의 가방과 캐리어, 슈즈까지 모델
+                                    최현준과 함께 판교점 부티크에서 살펴본다.<br><br><br>@gucci </p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀5.png" alt="">
+                            <img src="img/cont_03 타이틀5.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EN89WjCeLbM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/EN89WjCeLbM?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
-                                    <p>방송인 안현모의 쉬는 날 백화점 루틴 | 가스트로 테이블, 진저베어, 프레드, 아스티에 드 빌라트,<br> 르베이지, 카페몬지, 말본 | 마이현백루틴</p>
+                                    <p>방송인 안현모의 쉬는 날 백화점 루틴 | 가스트로 테이블, 진저베어, 프레드, 아스티에 드 빌라트,<br> 르베이지, 카페몬지, 말본 |
+                                        마이현백루틴</p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>통역가이자 방송인, 20년차 명랑 골퍼⛳️이기도 한 엔터테이너 안현모의 압구정 본점 쇼핑코스는? 서울의 핫한 레스토랑과 비건 메뉴까지 갖춘 ‘가스트로 테이블’부터 여름 휴가를 대비한 디올 선글라스와 프레드 쇼핑, 카페 몬지에서 달달한 마무리까지! 먹고 입고 즐기는 그녀의 여름날 짧은 휴가를 공개합니다.</p>
+                                <p>통역가이자 방송인, 20년차 명랑 골퍼⛳️이기도 한 엔터테이너 안현모의 압구정 본점 쇼핑코스는? 서울의 핫한 레스토랑과 비건 메뉴까지 갖춘 ‘가스트로
+                                    테이블’부터 여름 휴가를 대비한 디올 선글라스와 프레드 쇼핑, 카페 몬지에서 달달한 마무리까지! 먹고 입고 즐기는 그녀의 여름날 짧은 휴가를
+                                    공개합니다.</p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀6.png" alt="">
+                            <img src="img/cont_03 타이틀6.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info">
                             <div class="left">
                                 <a href="#">
-                                    <img src="img/cont_03item6left.png" alt="">
+                                    <img src="img/cont_03item6left.png" alt="매거진">
                                 </a>
                             </div><!-- .left end -->
                             <div class="right">
@@ -1156,32 +1173,32 @@
                                     <div>
                                         <span>배경</span>
                                     </div>
-                                    <img src="img/cont_03item6right1.png" alt="">
-                                    <img src="img/cont_03item6right2.png" alt="">
-                                    <img src="img/cont_03item6right3.png" alt="">
-                                    <img src="img/cont_03item6right4.png" alt="">
+                                    <img src="img/cont_03item6right1.png" alt="브랜드">
+                                    <img src="img/cont_03item6right2.png" alt="브랜드">
+                                    <img src="img/cont_03item6right3.png" alt="브랜드">
+                                    <img src="img/cont_03item6right4.png" alt="브랜드">
                                 </div><!-- .img end -->
                             </div><!-- .right end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="title">
-                            <img src="img/cont_03 타이틀7.png" alt="">
+                            <img src="img/cont_03 타이틀7.png" alt="부제목">
                         </div><!-- .title end -->
                         <div class="info on">
                             <div class="left">
-                                <img src="img/에디토리얼 사진1.png" alt="">
+                                <img src="img/에디토리얼 사진1.png" alt="장소사진">
                                 <div>
-                                    <p>경상북도를 둘러싼 우람한 산세는 도시 대구가 품은 축복일 것이다.  대구 시내를 벗어난 지 고작 40여 분 만에 펼쳐지는<br> 
-                                        청도의 풍광은 한껏 부풀어 오른 6월의 초록으로 무성하다. 청도 매전면 동산리, 마을로 들어서는 좁은 외길은 어릴 적<br> 
+                                    <p>경상북도를 둘러싼 우람한 산세는 도시 대구가 품은 축복일 것이다. 대구 시내를 벗어난 지 고작 40여 분 만에 펼쳐지는<br>
+                                        청도의 풍광은 한껏 부풀어 오른 6월의 초록으로 무성하다. 청도 매전면 동산리, 마을로 들어서는 좁은 외길은 어릴 적<br>
                                         외할머니 집으로 향하던 때의 정겨운 기억을 떠오르게 한다. 어느 것 하나 뽐냄 없이 고만고만한 지붕을 맞대고 있는 <br>
                                         마을 한편의 작은 집, 스테이더담. 나직한 돌 담벼락 너머의 흙벽집으로 돌길을 따라 걸어 들어갔다.</p>
-                                        <p>
-                                            살랑거리는 작은 꽃나무 사이로 드러난 본채와 별채 그리고 작은 마당. 말끔하게 단장한 이 작은 시골집에서 단 하루의<br>
-망중한을 즐길 참이다. 장거리 여행의 끝은 언제나 ‘오길 잘했다’라는 위안으로 피로를 잠재운다. 최근 나의 일상은 너무도 분주했다.<br> 
-새로 이사한 서촌의 집에 적응하는 것도, 반가운 손님들을 맞이하는 일도, 급하게 치러낸 마감 원고들도 내내 즐거움의 연속이었지만 <br>
-마음에 둥그런 여백을 내어주진 않았다. 그래서인지 물리적으로 서울을 잠시 떠나 있고 싶은 마음이 들던 차였다.
-                                        </p>
+                                    <p>
+                                        살랑거리는 작은 꽃나무 사이로 드러난 본채와 별채 그리고 작은 마당. 말끔하게 단장한 이 작은 시골집에서 단 하루의<br>
+                                        망중한을 즐길 참이다. 장거리 여행의 끝은 언제나 ‘오길 잘했다’라는 위안으로 피로를 잠재운다. 최근 나의 일상은 너무도 분주했다.<br>
+                                        새로 이사한 서촌의 집에 적응하는 것도, 반가운 손님들을 맞이하는 일도, 급하게 치러낸 마감 원고들도 내내 즐거움의 연속이었지만 <br>
+                                        마음에 둥그런 여백을 내어주진 않았다. 그래서인지 물리적으로 서울을 잠시 떠나 있고 싶은 마음이 들던 차였다.
+                                    </p>
                                 </div>
                             </div><!-- .left -->
                             <div class="right">
@@ -1198,7 +1215,7 @@
                                     <div>
                                         <a href="#">바로가기</a>
                                     </div>
-                                    <img src="img/에디토리얼 사진2.png" alt="">
+                                    <img src="img/에디토리얼 사진2.png" alt="박선영">
                                 </div><!-- .down end -->
                             </div><!-- .right end -->
                         </div><!-- .info end -->
@@ -1212,18 +1229,18 @@
                 <div class="arti">
                     <div class="item">
                         <div class="title">
-                           <p>그로서리 가이드 EP.12</p>
+                            <p>그로서리 가이드 EP.12</p>
                         </div><!-- .title end -->
                         <div class="info">
                             <div class="up">
                                 <div class="left">
-                                    <img src="img/cont_03item1큰이미지.png" alt="">
+                                    <img src="img/cont_03item1큰이미지.png" alt="큰이미지">
                                 </div><!-- .left end -->
                                 <div class="right">
                                     <div class="up">
                                         <p>달콤한 티타임을 선물해요</p>
                                         <div>
-                                            <img src="img/cont_03item1보따리.png" alt="">
+                                            <img src="img/cont_03item1보따리.png" alt="보따리">
                                         </div>
                                     </div><!-- .up end -->
                                     <div class="down">
@@ -1236,12 +1253,13 @@
                                         </div>
                                         <div class="arti">
                                             <div class="left">
-                                                <img src="img/cont_03item1쿠키1.png" alt="">
+                                                <img src="img/cont_03item1쿠키1.png" alt="쿠키">
 
                                             </div><!-- .left end -->
                                             <div class="right">
                                                 <p>소중한 사람들에게 나눌 무언가를 고민<br>중이라면 아쉬웠던 1%를 채워줄 디저트는<br>어때요?</p>
-                                                <p>어른부터 아이까지 모두에게 달콤한 시간을<br>선사한다면 틀림없이 좋은 선물이 될거에요.<br>가볍지만 부담스럽지 않게, 여러분의 센스가<br>돋보일 수 있도록 도와드릴게요.</p>
+                                                <p>어른부터 아이까지 모두에게 달콤한 시간을<br>선사한다면 틀림없이 좋은 선물이 될거에요.<br>가볍지만 부담스럽지 않게,
+                                                    여러분의 센스가<br>돋보일 수 있도록 도와드릴게요.</p>
                                             </div><!-- .right end -->
                                         </div><!-- .arti end -->
                                     </div><!-- .down end -->
@@ -1260,7 +1278,8 @@
                                             <span># 가벼운 선물</span>
                                         </div><!-- .left end -->
                                         <div class="right">
-                                            <p>지난 설명절 많이 언급된 N극화를 아시나요?<br>소비양극화에 가성비를 앞세운 밀키트 세트부터,<br>특별한 명절을 위한 호텔패키지 까지!</p>
+                                            <p>지난 설명절 많이 언급된 N극화를 아시나요?<br>소비양극화에 가성비를 앞세운 밀키트 세트부터,<br>특별한 명절을 위한 호텔패키지
+                                                까지!</p>
                                             <p>SNS에 #명절선물을 검색하면 요즘은 ‘할매니얼’<br>트렌드에 맞게 개성주악, 약과와 같은 전통 디저트가<br>특히 인기!</p>
                                             <p>코로나 19의 장기화로 비대면 선물이 크게 증가했어요.</p>
                                         </div><!-- .right end -->
@@ -1280,21 +1299,21 @@
                                                 <span>구움과자<br> 디저트카페</span>
                                                 <p>콘디토리<br> 오븐</p>
                                             </div>
-                                            <img src="img/cont_03item1상품1.png" alt="">
+                                            <img src="img/cont_03item1상품1.png" alt="상품">
                                         </a><!-- .item end -->
                                         <a href="#" class="item">
                                             <div>
                                                 <span>프리미엄 수제<br> 양갱 전문점</span>
                                                 <p>금옥당</p>
                                             </div>
-                                            <img src="img/cont_03item1상품2.png" alt="">
+                                            <img src="img/cont_03item1상품2.png" alt="상품">
                                         </a><!-- .item end -->
                                         <a href="#" class="item">
                                             <div>
                                                 <span>전통 디저트<br> 개성주악</span>
                                                 <p>연리희재</p>
                                             </div>
-                                            <img src="img/cont_03item1상품3.png" alt="">
+                                            <img src="img/cont_03item1상품3.png" alt="상품">
                                         </a><!-- .item end -->
                                     </div><!-- .arti end -->
                                 </div><!-- .right end -->
@@ -1307,7 +1326,7 @@
                         </div><!-- .title end -->
                         <div class="info">
                             <div class="bg">
-                                <img src="img/cont_03item2배경.png" alt="">
+                                <img src="img/cont_03item2배경.png" alt="배경이미지">
                             </div><!-- .bg end -->
                             <div class="title">
                                 <div>
@@ -1317,7 +1336,7 @@
                             </div><!-- .title end -->
                             <div class="list">
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-1.png" alt="">
+                                    <img src="img/cont_03item2상품1-1.png" alt="상품">
                                     <div class="text">
                                         <p>아르켓</p>
                                         <span>오버사이즈 울 블렌드 트윌 블레이저</span>
@@ -1325,7 +1344,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-2.png" alt="">
+                                    <img src="img/cont_03item2상품1-2.png" alt="상품">
                                     <div class="text">
                                         <p>미우미우</p>
                                         <span>코튼 터틀넥 저지</span>
@@ -1333,7 +1352,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-3.png" alt="">
+                                    <img src="img/cont_03item2상품1-3.png" alt="상품">
                                     <div class="text">
                                         <p>버버리</p>
                                         <span>체크 울 미니 킬트</span>
@@ -1341,7 +1360,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-4.png" alt="">
+                                    <img src="img/cont_03item2상품1-4.png" alt="상품">
                                     <div class="text">
                                         <p>토즈</p>
                                         <span>힐 로퍼</span>
@@ -1349,7 +1368,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-5.png" alt="">
+                                    <img src="img/cont_03item2상품1-5.png" alt="상품">
                                     <div class="text">
                                         <p>샤넬</p>
                                         <span>클래식 플랩 백</span>
@@ -1357,7 +1376,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-6.png" alt="">
+                                    <img src="img/cont_03item2상품1-6.png" alt="상품">
                                     <div class="text">
                                         <p>프라다</p>
                                         <span>리 나일론 헤드밴드</span>
@@ -1365,7 +1384,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-1.png" alt="">
+                                    <img src="img/cont_03item2상품1-1.png" alt="상품">
                                     <div class="text">
                                         <p>아르켓</p>
                                         <span>오버사이즈 울 블렌드 트윌 블레이저</span>
@@ -1373,7 +1392,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품1-2.png" alt="">
+                                    <img src="img/cont_03item2상품1-2.png" alt="상품">
                                     <div class="text">
                                         <p>미우미우</p>
                                         <span>코튼 터틀넥 저지</span>
@@ -1383,7 +1402,7 @@
                             </div>
                             <div class="list">
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-1.png" alt="">
+                                    <img src="img/cont_03item2상품2-1.png" alt="상품">
                                     <div class="text">
                                         <p>믹스마라</p>
                                         <span>렌네스 실크 블라우스</span>
@@ -1391,7 +1410,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-2.png" alt="">
+                                    <img src="img/cont_03item2상품2-2.png" alt="상품">
                                     <div class="text">
                                         <p>로로</p>
                                         <span>피아나 드레스덴 팬츠</span>
@@ -1399,7 +1418,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-3.png" alt="">
+                                    <img src="img/cont_03item2상품2-3.png" alt="상품">
                                     <div class="text">
                                         <p>로저</p>
                                         <span>비비에 트럼펫 메탈 버클 발레리나 플렛</span>
@@ -1407,7 +1426,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-4.png" alt="">
+                                    <img src="img/cont_03item2상품2-4.png" alt="상품">
                                     <div class="text">
                                         <p>셀린느</p>
                                         <span>퀴르 트리옹프 스몰 드로우스트링 카바스</span>
@@ -1415,7 +1434,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-5.png" alt="">
+                                    <img src="img/cont_03item2상품2-5.png" alt="상품">
                                     <div class="text">
                                         <p>생로랑</p>
                                         <span>선글라스 SL M127/F</span>
@@ -1423,7 +1442,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-1.png" alt="">
+                                    <img src="img/cont_03item2상품2-1.png" alt="상품">
                                     <div class="text">
                                         <p>믹스마라</p>
                                         <span>렌네스 실크 블라우스</span>
@@ -1431,7 +1450,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-2.png" alt="">
+                                    <img src="img/cont_03item2상품2-2.png" alt="상품">
                                     <div class="text">
                                         <p>로로</p>
                                         <span>피아나 드레스덴 팬츠</span>
@@ -1439,7 +1458,7 @@
                                     </div>
                                 </a>
                                 <a href="#">
-                                    <img src="img/cont_03item2상품2-3.png" alt="">
+                                    <img src="img/cont_03item2상품2-3.png" alt="상품">
                                     <div class="text">
                                         <p>로저</p>
                                         <span>비비에 트럼펫 메탈 버클 발레리나 플렛</span>
@@ -1455,14 +1474,20 @@
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-f9ihQOlM3o?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/-f9ihQOlM3o?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
                                     <p>지금 현대 | 피아제 <span>PIAGET</span></p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>조르주 피아제(Georges Piaget)가 1874년 스위스 주라 지역의 라 코토페에 첫발을 내디딘 뒤, 피아제는 고유의 스타일과 탁월한 보석 세공, 워치메이킹 기술력을 바탕으로 하이엔드 워치 주얼리 브랜드의 최정상 자리를 지키고 있다.<br><br>"언제나 완벽, 그 이상을 추구하라"는 창립자의 모토가 세대를 거쳐 전해져 온 피아제의 탁월한 작품을 무역센터점 부티크에서 소개한다.<br><br><br>@Piaget</p>
+                                <p>조르주 피아제(Georges Piaget)가 1874년 스위스 주라 지역의 라 코토페에 첫발을 내디딘 뒤, 피아제는 고유의 스타일과 탁월한 보석 세공,
+                                    워치메이킹 기술력을 바탕으로 하이엔드 워치 주얼리 브랜드의 최정상 자리를 지키고 있다.<br><br>"언제나 완벽, 그 이상을 추구하라"는 창립자의
+                                    모토가 세대를 거쳐 전해져 온 피아제의 탁월한 작품을 무역센터점 부티크에서 소개한다.<br><br><br>@Piaget</p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
@@ -1472,14 +1497,22 @@
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/v41SIfIbPzU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/v41SIfIbPzU?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
                                     <p>지금 현대 | 구찌 <span>GUCCI</span></p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>A Step into the Gucci World<br><br><br>현대백화점 판교점에 오픈한 구찌 남성 부티크는 이탈리아 피렌체에 위치한 헤드쿼터의 분위기가 그대로 담겼다. 구찌의 시그니처 모티브인 핸드 페인티드 우드 플로어 장식, 앤티크한 오브제 등 하우스를 상징하는 요소로 가득하다.<br><br>구찌는 최근 유구한 역사만큼 오랜 시간 함께해온 시그니처 로고를 점보 GG로 개편해 선보이고 있다. 설립자인 구찌오 구찌(Guccio Gucci)의 이니셜이 마주보는 이 로고는 구찌를 상징하는 아이콘. 이번 시즌 점보 GG 모티브의 가방과 캐리어, 슈즈까지 모델 최현준과 함께 판교점 부티크에서 살펴본다.<br><br><br>@gucci </p>
+                                <p>A Step into the Gucci World<br><br><br>현대백화점 판교점에 오픈한 구찌 남성 부티크는 이탈리아 피렌체에 위치한 헤드쿼터의
+                                    분위기가 그대로 담겼다. 구찌의 시그니처 모티브인 핸드 페인티드 우드 플로어 장식, 앤티크한 오브제 등 하우스를 상징하는 요소로
+                                    가득하다.<br><br>구찌는 최근 유구한 역사만큼 오랜 시간 함께해온 시그니처 로고를 점보 GG로 개편해 선보이고 있다. 설립자인 구찌오
+                                    구찌(Guccio Gucci)의 이니셜이 마주보는 이 로고는 구찌를 상징하는 아이콘. 이번 시즌 점보 GG 모티브의 가방과 캐리어, 슈즈까지 모델
+                                    최현준과 함께 판교점 부티크에서 살펴본다.<br><br><br>@gucci </p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
@@ -1489,14 +1522,20 @@
                         </div><!-- .title end -->
                         <div class="info">
                             <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EN89WjCeLbM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/EN89WjCeLbM?autoplay=1&mute=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="text">
                                 <div>
                                     <p>방송인 안현모의 쉬는 날 백화점 루틴</p>
                                     <a href="#">more</a>
                                 </div>
-                                <p>통역가이자 방송인, 20년차 명랑 골퍼⛳️이기도 한 엔터테이너 안현모의 압구정 본점 쇼핑코스는? 서울의 핫한 레스토랑과 비건 메뉴까지 갖춘 ‘가스트로 테이블’부터 여름 휴가를 대비한 디올 선글라스와 프레드 쇼핑, 카페 몬지에서 달달한 마무리까지! 먹고 입고 즐기는 그녀의 여름날 짧은 휴가를 공개합니다.</p>
+                                <p>통역가이자 방송인, 20년차 명랑 골퍼⛳️이기도 한 엔터테이너 안현모의 압구정 본점 쇼핑코스는? 서울의 핫한 레스토랑과 비건 메뉴까지 갖춘 ‘가스트로
+                                    테이블’부터 여름 휴가를 대비한 디올 선글라스와 프레드 쇼핑, 카페 몬지에서 달달한 마무리까지! 먹고 입고 즐기는 그녀의 여름날 짧은 휴가를
+                                    공개합니다.</p>
                             </div><!-- .text end -->
                         </div><!-- .info end -->
                     </div><!-- .item end -->
@@ -1507,7 +1546,7 @@
                         <div class="info">
                             <div class="left">
                                 <a href="#">
-                                    <img src="img/cont_03item6left.png" alt="">
+                                    <img src="img/cont_03item6left.png" alt="매거진">
                                 </a>
                             </div><!-- .left end -->
                             <div class="right">
@@ -1521,10 +1560,10 @@
                                     <div>
                                         <span>배경</span>
                                     </div>
-                                    <img src="img/cont_03item6right1.png" alt="">
-                                    <img src="img/cont_03item6right2.png" alt="">
-                                    <img src="img/cont_03item6right3.png" alt="">
-                                    <img src="img/cont_03item6right4.png" alt="">
+                                    <img src="img/cont_03item6right1.png" alt="브랜드">
+                                    <img src="img/cont_03item6right2.png" alt="브랜드">
+                                    <img src="img/cont_03item6right3.png" alt="브랜드">
+                                    <img src="img/cont_03item6right4.png" alt="브랜드">
                                 </div><!-- .img end -->
                             </div><!-- .right end -->
                         </div><!-- .info end -->
@@ -1535,18 +1574,18 @@
                         </div><!-- .title end -->
                         <div class="info on">
                             <div class="left">
-                                <img src="img/에디토리얼 사진1.png" alt="">
+                                <img src="img/에디토리얼 사진1.png" alt="집사진">
                                 <div>
-                                    <p>경상북도를 둘러싼 우람한 산세는 도시 대구가 품은 축복일 것이다.  대구 시내를 벗어난 지 고작 40여 분 만에 펼쳐지는<br> 
-                                        청도의 풍광은 한껏 부풀어 오른 6월의 초록으로 무성하다. 청도 매전면 동산리, 마을로 들어서는 좁은 외길은 어릴 적<br> 
+                                    <p>경상북도를 둘러싼 우람한 산세는 도시 대구가 품은 축복일 것이다. 대구 시내를 벗어난 지 고작 40여 분 만에 펼쳐지는<br>
+                                        청도의 풍광은 한껏 부풀어 오른 6월의 초록으로 무성하다. 청도 매전면 동산리, 마을로 들어서는 좁은 외길은 어릴 적<br>
                                         외할머니 집으로 향하던 때의 정겨운 기억을 떠오르게 한다. 어느 것 하나 뽐냄 없이 고만고만한 지붕을 맞대고 있는 <br>
                                         마을 한편의 작은 집, 스테이더담. 나직한 돌 담벼락 너머의 흙벽집으로 돌길을 따라 걸어 들어갔다.</p>
-                                        <p>
-                                            살랑거리는 작은 꽃나무 사이로 드러난 본채와 별채 그리고 작은 마당. 말끔하게 단장한 이 작은 시골집에서 단 하루의<br>
-망중한을 즐길 참이다. 장거리 여행의 끝은 언제나 ‘오길 잘했다’라는 위안으로 피로를 잠재운다. 최근 나의 일상은 너무도 분주했다.<br> 
-새로 이사한 서촌의 집에 적응하는 것도, 반가운 손님들을 맞이하는 일도, 급하게 치러낸 마감 원고들도 내내 즐거움의 연속이었지만 <br>
-마음에 둥그런 여백을 내어주진 않았다. 그래서인지 물리적으로 서울을 잠시 떠나 있고 싶은 마음이 들던 차였다.
-                                        </p>
+                                    <p>
+                                        살랑거리는 작은 꽃나무 사이로 드러난 본채와 별채 그리고 작은 마당. 말끔하게 단장한 이 작은 시골집에서 단 하루의<br>
+                                        망중한을 즐길 참이다. 장거리 여행의 끝은 언제나 ‘오길 잘했다’라는 위안으로 피로를 잠재운다. 최근 나의 일상은 너무도 분주했다.<br>
+                                        새로 이사한 서촌의 집에 적응하는 것도, 반가운 손님들을 맞이하는 일도, 급하게 치러낸 마감 원고들도 내내 즐거움의 연속이었지만 <br>
+                                        마음에 둥그런 여백을 내어주진 않았다. 그래서인지 물리적으로 서울을 잠시 떠나 있고 싶은 마음이 들던 차였다.
+                                    </p>
                                 </div>
                             </div><!-- .left -->
                             <div class="right">
@@ -1563,7 +1602,7 @@
                                     <div>
                                         <a href="#">바로가기</a>
                                     </div>
-                                    <img src="img/에디토리얼 사진2.png" alt="">
+                                    <img src="img/에디토리얼 사진2.png" alt="박선영">
                                 </div><!-- .down end -->
                             </div><!-- .right end -->
                         </div><!-- .info end -->
@@ -1592,8 +1631,8 @@
                                         <h3>FORUM</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>현대백화점과 한섬이 제안하는<br>새롭고 감각적인 패션 편집숍</p>
@@ -1601,7 +1640,7 @@
                                 <div class="active">
                                     <div class="top">
                                         <div class="left">
-                                            <img src="img/cont_04forum_logo1.png" alt="">
+                                            <img src="img/cont_04forum_logo1.png" alt="로고">
                                         </div><!-- .left end -->
                                         <div class="right">
                                             <div>
@@ -1613,22 +1652,22 @@
                                                     <span>
                                                         매장안내
                                                     </span>
-                                                    <img src="img/cont_04 오른쪽 화살표 검정.png" alt="">
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                                 </a>
                                                 <a href="#">
                                                     <span>
                                                         온라인몰
                                                     </span>
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                                 </a>
                                             </div><!-- .btn end -->
                                         </div><!-- .right end -->
                                     </div><!-- .top end -->
                                     <div class="mid">
                                         <div class="left">
-                                            <img src="img/cont_04forum_logo1.png" alt="">
+                                            <img src="img/cont_04forum_logo1.png" alt="로고">
                                         </div><!-- .left end -->
                                         <div class="right">
                                             <div>
@@ -1640,22 +1679,22 @@
                                                     <span>
                                                         매장안내
                                                     </span>
-                                                    <img src="img/cont_04 왼쪽화살표 검정png.png" alt="">
-                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 왼쪽화살표 검정png.png" alt="화살표">
+                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
                                                 </a>
                                                 <a href="#">
                                                     <span>
                                                         온라인몰
                                                     </span>
-                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
-                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
+                                                    <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
                                                 </a>
                                             </div><!-- .btn end -->
                                         </div><!-- .right end -->
                                     </div><!-- .mid end -->
                                     <div class="bot">
                                         <div class="left">
-                                            <img src="img/cont_04forum_logo1.png" alt="">
+                                            <img src="img/cont_04forum_logo1.png" alt="로고">
                                         </div><!-- .left end -->
                                         <div class="right">
                                             <div>
@@ -1667,15 +1706,15 @@
                                                     <span>
                                                         매장안내
                                                     </span>
-                                                    <img src="img/cont_04 오른쪽 화살표 검정.png" alt="">
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                                 </a>
                                                 <a href="#">
                                                     <span>
                                                         온라인몰
                                                     </span>
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                                    <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                                 </a>
                                             </div><!-- .btn end -->
                                         </div><!-- .right end -->
@@ -1686,8 +1725,8 @@
                                 <div class="normal">
                                     <div>
                                         <a href="#">
-                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="">
+                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="화살표">
                                             <span>매장안내</span>
                                         </a>
                                         <h3>Be CLEAN</h3>
@@ -1699,8 +1738,8 @@
                                         <h3>Be CLEAN</h3>
                                         <p>친환경 제품과 인디뷰티 브랜드를<br>큐레이션한 클린뷰티 전문 스토어 </p>
                                         <a href="#">
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png " alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png " alt="화살표">
                                             <span>매장안내</span>
                                         </a>
                                     </div>
@@ -1712,8 +1751,8 @@
                                         <h3>LABELS</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>컨템포러리 브랜드의 시그니처 아이템을<br>제안하는 트렌디 감성 수입 편집숍</p>
@@ -1724,8 +1763,8 @@
                                         <p>컨템포러리 브랜드의 시그니처 아이템을
                                             제안하는<br>트렌디 감성 수입 편집숍</p>
                                         <a href="#">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png " alt="">
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png " alt="화살표">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                             <span>매장안내</span>
                                         </a>
                                     </div>
@@ -1739,8 +1778,8 @@
                                         <h3>HBYH</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>다양한 리빙 아이템과 라이프스타일 트렌드를<br>제안하는 리빙 라이프스타일 샵</p>
@@ -1751,8 +1790,8 @@
                                         <p>다양한 리빙 아이템과 라이프스타일 트렌드를<br>제안하는 리빙 라이프스타일 샵</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1761,8 +1800,8 @@
                                 <div class="normal">
                                     <div>
                                         <a href="#">
-                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="">
+                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="화살표">
                                             <span>매장안내</span>
                                         </a>
                                         <h3>르쁠라 H</h3>
@@ -1775,8 +1814,8 @@
                                         <p>세계 각국의 Heritage 브랜드와<br>트렌드 테이블웨어 브랜드를 큐레이션한 공간</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1787,8 +1826,8 @@
                                         <h3>위마켓</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>현대백화점이 직접 큐레이팅하는<br>라이프스타일 마켓</p>
@@ -1799,8 +1838,8 @@
                                         <p>현대백화점이 직접 큐레이팅하는<br>라이프스타일 마켓</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1813,8 +1852,8 @@
                                         <h3>명인명촌</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>전국에서 전통을 고수하는 80여명의 장인들의<br>상품을 소개하는 프리미엄 전통식품 브랜드</p>
@@ -1825,8 +1864,8 @@
                                         <p>전국에서 전통을 고수하는 80여명의 장인들의<br>상품을 소개하는 프리미엄 전통식품 브랜드</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1835,8 +1874,8 @@
                                 <div class="normal">
                                     <div>
                                         <a href="#">
-                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="">
+                                            <img src="img/cont_04 왼쪽화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 왼쪽화살표 검정png.png " alt="화살표">
                                             <span>매장안내</span>
                                         </a>
                                         <h3>원테이블</h3>
@@ -1849,8 +1888,8 @@
                                         <p>현대백화점이 만든 프리미엄<br>가정 간편식 브랜드</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1861,8 +1900,8 @@
                                         <h3>와인웍스</h3>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
                                         </a>
                                     </div>
                                     <p>와인, 다이닝, 커뮤니티가 공존하는<br>최대 규모 와인 중심 복합 공간</p>
@@ -1873,8 +1912,8 @@
                                         <p>와인, 다이닝, 커뮤니티가 공존하는<br>최대 규모 와인 중심 복합 공간</p>
                                         <a href="#">
                                             <span>매장안내</span>
-                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="">
-                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="">
+                                            <img class="black" src="img/cont_04 오른쪽 화살표 검정.png" alt="화살표">
+                                            <img src="img/cont_04 오른쪽 화살표 흰색.png" alt="화살표">
                                         </a>
                                     </div>
                                 </div>
@@ -1999,14 +2038,14 @@
                             </ul>
                         </div><!-- .center end -->
                         <div class="right">
-                            <img class="on" src="img/6층.png" alt="">
-                            <img src="img/5층.png" alt="">
-                            <img src="img/4층.png" alt="">
-                            <img src="img/3층.png" alt="">
-                            <img src="img/2층.png" alt="">
-                            <img src="img/1층.png" alt="">
-                            <img src="img/지하1층.png" alt="">
-                            <img src="img/지하2층.png" alt="">
+                            <img class="on" src="img/6층.png" alt="6층">
+                            <img src="img/5층.png" alt="5층">
+                            <img src="img/4층.png" alt="4층">
+                            <img src="img/3층.png" alt="3층">
+                            <img src="img/2층.png" alt="2층">
+                            <img src="img/1층.png" alt="1층">
+                            <img src="img/지하1층.png" alt="지하1층">
+                            <img src="img/지하2층.png" alt="지하2층">
                         </div><!-- .right end -->
                     </div><!-- .down end -->
                 </div><!-- .inner end -->
@@ -2016,7 +2055,7 @@
             <div class="left">
                 <div class="up">
                     <div class="bg">
-                        <img src="img/footer이미지1.png" alt="">
+                        <img src="img/footer이미지1.png" alt="푸터배경">
                     </div><!-- .bg end -->
                     <div class="info">
                         <div class="top">
@@ -2025,15 +2064,15 @@
                                 <div>
                                     <span>백화점</span>
                                     <p>10:30 ~ 20:30</p>
-                                </div>                                   
+                                </div>
                                 <div>
                                     <span>식당가</span>
                                     <p>10:30 ~ 22:00</p>
-                                </div>                                   
+                                </div>
                                 <div>
                                     <span>대표 전화</span>
                                     <p>02-767-2233</p>
-                                </div>                                   
+                                </div>
                             </div><!-- .cont end -->
                             <div class="list">
                                 <a href="#">층별 안내</a>
@@ -2062,7 +2101,7 @@
                                                 <option value="울산점">울산점</option>
                                                 <option value="울산동구점">울산동구점</option>
                                                 <option value="충청점">충청점</option>
-        
+
                                             </select>
                                         </li>
                                     </ul>
@@ -2072,7 +2111,7 @@
                                         <li class="depth_01">
                                             <select name="더 현대">
                                                 <option value="더현대 서울">더현대 서울</option>
-                                                <option value="더현대 대구">더현대 대구</option>        
+                                                <option value="더현대 대구">더현대 대구</option>
                                             </select>
                                         </li>
                                     </ul>
@@ -2103,7 +2142,7 @@
                     <div class="top">
                         <h1>
                             <a href="#">
-                                <img src="img/footer로고.png" alt="">
+                                <img src="img/footer로고.png" alt="푸터로고">
                             </a>
                         </h1>
                         <div class="info">
@@ -2173,7 +2212,7 @@
                                             <option value="中國語">中國語</option>
                                             <option value="日本語">日本語</option>
                                         </select>
-                                    </li> 
+                                    </li>
                                 </ul>
                             </div><!-- .lang end -->
                         </div><!-- .left end -->
@@ -2224,7 +2263,7 @@
                                     <option value="中國語">中國語</option>
                                     <option value="日本語">日本語</option>
                                 </select>
-                            </li> 
+                            </li>
                         </ul>
                     </div><!-- .lang end -->
                     <div class="right family">
@@ -2262,7 +2301,7 @@
                         </ul>
                     </div><!-- .right end -->
                 </div>
-                
+
                 <div class="bot">
                     <p>© Hyundai Department Store. All rights reserved.</p>
                 </div><!-- .bot end -->
@@ -2270,4 +2309,5 @@
         </footer>
     </div><!-- #wrap end -->
 </body>
+
 </html>
