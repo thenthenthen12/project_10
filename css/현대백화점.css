@@ -67,7 +67,7 @@ header .depth_02.on {
     top: 0;
 }
 
-header .depth_02.on h3.on {
+header .depth_02.on .title.on {
     padding: 5rem 0 0 5rem;
     height: calc(100% - 100px);
     position: absolute;
@@ -77,61 +77,61 @@ header .depth_02.on h3.on {
     display: flex;
 }
 
-header .depth_02.on h3.on1 {
+header .depth_02.on .title.on1 {
     padding: 0;
     display: none;
 }
 
-header .depth_02 h3>p {
+header .depth_02 .title>p {
     overflow: hidden;
 }
 
-header .depth_02 h3>p span {
+header .depth_02 .title>p span {
     position: relative;
     transition: 1s;
 }
 
-header .depth_02.on h3>p span {
+header .depth_02.on .title>p span {
     top: 0;
 }
 
-header .depth_02 h3 span:nth-child(1) {
+header .depth_02 .title span:nth-child(1) {
     top: 100px;
 }
 
-header .depth_02 h3 span:nth-child(2) {
+header .depth_02 .title span:nth-child(2) {
     top: 120px;
 }
 
-header .depth_02 h3 span:nth-child(3) {
+header .depth_02 .title span:nth-child(3) {
     top: 140px;
 }
 
-header .depth_02 h3 span:nth-child(4) {
+header .depth_02 .title span:nth-child(4) {
     top: 160px;
 }
 
-header .depth_02 h3 span:nth-child(5) {
+header .depth_02 .title span:nth-child(5) {
     top: 180px;
 }
 
-header .depth_02 h3 span:nth-child(6) {
+header .depth_02 .title span:nth-child(6) {
     top: 200px;
 }
 
-header .depth_02 h3 span:nth-child(7) {
+header .depth_02 .title span:nth-child(7) {
     top: 220px;
 }
 
-header .depth_02 h3 span:nth-child(8) {
+header .depth_02 .title span:nth-child(8) {
     top: 240px;
 }
 
-header .depth_02 h3 span:nth-child(9) {
+header .depth_02 .title span:nth-child(9) {
     top: 260px;
 }
 
-header .depth_02 h3 span:nth-child(10) {
+header .depth_02 .title span:nth-child(10) {
     top: 280px;
 }
 
@@ -141,76 +141,80 @@ header .depth_02 .active {
 
 header .depth_02.on .active.on {
     display: flex;
+    width: 100%;
 }
 
-header .depth_02.on h3.on>p {
+header .depth_02.on .title.on>p {
     padding-right: 10rem;
     margin-right: 2rem;
     border-right: 2px solid #154733;
 }
 
-header .depth_02.on h3.on>p span {
+header .depth_02.on .title.on>p span {
     font-size: 40px;
 }
 
-header .depth_02.on h3.on ul {
+header .depth_02.on .title.on ul {
     margin-right: 3rem;
+    width: 100%;
+    margin-left: 1rem;
+
 }
 
-header .depth_02.on h3.on ul li {
+header .depth_02.on .title.on ul li {
     margin-bottom: 2rem;
     font-size: 20px;
     position: relative;
 }
 
-header .depth_02.on h3.on ul li:nth-child(1) {
+header .depth_02.on .title.on ul li:nth-child(1) {
     font-weight: 800;
     font-size: 25px;
     margin-bottom: 3rem;
 }
-
-header .depth_02.on h3.on ul li:nth-child(n+2):hover {
+header .depth_02.on .title.on ul li:nth-child(n+2):hover {
     font-weight: 700;
 }
 
-header .depth_02.on h3.on ul li:nth-child(n+2):hover::after {
+header .depth_02.on .title.on ul li:nth-child(n+2):hover::after {
     opacity: 1;
 }
 
-header .depth_02.on h3.on ul li:nth-child(n+2)::after {
+header .depth_02.on .title.on ul li:nth-child(n+2)::after {
     content: "";
     position: absolute;
     bottom: -1rem;
-    left: -10%;
-    width: 120%;
+    left: 0%;
+    width: 100%;
     height: 2px;
     background-color: #154733;
     transition: 0.5s;
     opacity: 0;
 }
 
-header .depth_02 h3 {
+header .depth_02 .title {
     padding: 3rem 0 3rem 5rem;
     cursor: pointer;
     transition: 0.5s;
     width: 100%;
+    font-weight: 500;
 }
 
-header .depth_02 h3 span {
+header .depth_02 .title span {
     font-size: 60px;
 }
 
-header .depth_02 h3:hover {
+header .depth_02 .title:hover {
     transform: translateX(20px);
     background-color: #fff;
     color: #154733;
 }
 
-header .depth_02.on h3:hover>p>span {
+header .depth_02.on .title:hover>p>span {
     transition: unset;
 }
 
-header .depth_02 h3.on:hover {
+header .depth_02 .title.on:hover {
     transform: none;
 }
 
@@ -237,7 +241,7 @@ header .inner .menu_btn {
     overflow: hidden;
 }
 
-header .depth_02.on h3.on ul li:nth-child(n+2) {
+header .depth_02.on .title.on ul li:nth-child(n+2) {
     display: none;
 }
 
