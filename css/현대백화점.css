@@ -145,7 +145,8 @@ header .depth_02.on .active.on {
 }
 
 header .depth_02.on .title.on>p {
-    padding-right: 10rem;
+    width: 30%;
+    padding-right: 5rem;
     margin-right: 2rem;
     border-right: 2px solid #154733;
 }
@@ -156,7 +157,7 @@ header .depth_02.on .title.on>p span {
 
 header .depth_02.on .title.on ul {
     margin-right: 3rem;
-    width: 100%;
+    width: 30%;
     margin-left: 1rem;
 
 }
@@ -5278,19 +5279,19 @@ footer>.right>.bot {
 }/* 1440px */
 
 @media screen and (max-width:1390px) {
-    header .depth_02 h3 span {
+    header .depth_02 .title span {
         font-size: 40px;
     }
 
-    header .depth_02.on h3.on>p span {
+    header .depth_02.on .title.on>p span {
         font-size: 30px;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(1) {
+    header .depth_02.on .title.on ul li:nth-child(1) {
         font-size: 22px;
     }
 
-    header .depth_02.on h3.on ul li {
+    header .depth_02.on .title.on ul li {
         font-size: 18px;
     }
 
@@ -6091,23 +6092,23 @@ footer>.right>.bot {
 }/* 1024px */
 
 @media screen and (max-width:860px) {
-    header .depth_02.on h3.on>p {
+    header .depth_02.on .title.on>p {
         padding-right: 5rem;
     }
 
-    header .depth_02 h3 span {
+    header .depth_02 .title span {
         font-size: 35px;
     }
 
-    header .depth_02.on h3.on>p span {
+    header .depth_02.on .title.on>p span {
         font-size: 26px;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(1) {
+    header .depth_02.on .title.on ul li:nth-child(1) {
         font-size: 20px;
     }
 
-    header .depth_02.on h3.on ul li {
+    header .depth_02.on .title.on ul li {
         font-size: 16px;
     }
 
@@ -6465,7 +6466,7 @@ footer>.right>.bot {
 
 @media screen and (max-width:767px) {
 
-    header .depth_02.on h3.on>p {
+    header .depth_02.on .title.on>p {
         width: 15px;
     }
 
@@ -6474,22 +6475,22 @@ footer>.right>.bot {
 
     }
 
-    header .depth_02.on h3.on ul {
+    header .depth_02.on .title.on ul {
         display: flex;
 
     }
 
-    header .depth_02.on h3.on ul li {
+    header .depth_02.on .title.on ul li {
         word-break: break-all;
         width: 15px;
         margin-right: 2rem;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(1) {
+    header .depth_02.on .title.on ul li:nth-child(1) {
         margin-right: 3rem;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(n+2):hover::after {
+    header .depth_02.on .title.on ul li:nth-child(n+2):hover::after {
         display: none;
     }
 
@@ -7116,7 +7117,7 @@ footer>.right>.bot {
 }/* 480px */
 
 @media screen and (max-width:430px) {
-    header .depth_02.on h3.on ul li {
+    header .depth_02.on .title.on ul li {
         margin-right: 0.5rem;
     }
 
@@ -7276,19 +7277,19 @@ footer>.right>.bot {
         height: 60vw;
     }
 
-    header .depth_02.on h3.on>p {
+    header .depth_02.on .title.on>p {
         padding-right: 4rem;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(1) {
+    header .depth_02.on .title.on ul li:nth-child(1) {
         font-size: 16px;
     }
 
-    header .depth_02.on h3.on ul li {
+    header .depth_02.on .title.on ul li {
         font-size: 14px;
     }
 
-    header .depth_02.on h3.on>p {
+    header .depth_02.on .title.on>p {
         margin-right: 1rem;
     }
 
@@ -7388,15 +7389,15 @@ footer>.right>.bot {
         left: 2rem;
     }
 
-    header .depth_02.on h3.on ul li:nth-child(1) {
+    header .depth_02.on .title.on ul li:nth-child(1) {
         margin-right: 1rem;
     }
 
-    header .depth_02 h3 span {
+    header .depth_02 .title span {
         font-size: 25px;
     }
 
-    header .depth_02.on h3.on {
+    header .depth_02.on .title.on {
         padding: 1rem 0 0 1rem;
     }
 
